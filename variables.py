@@ -1,14 +1,14 @@
-name = input("Please Enter Your Name")
-while True:
-    try:
-        age = int(input("Please Enter Your Age"))
-        if age < 1 or age > 50:
-            raise ValueError  # this will send it to the print message and back to the input option
-        break
-    except ValueError:
-        print("Invalid integer. The number must be in the range of 1-50.")
-print(name)
-print(age)
+# name = input("Please Enter Your Name")
+# while True:
+#     try:
+#         age = int(input("Please Enter Your Age"))
+#         if age < 1 or age > 50:
+#             raise ValueError  # this will send it to the print message and back to the input option
+#         break
+#     except ValueError:
+#         print("Invalid integer. The number must be in the range of 1-50.")
+# print(name)
+# print(age)
 
 # Exercise 1: Capturing User Details
 
@@ -21,3 +21,5 @@ address = input("Please Enter Your Address")
 
 print(full_name, '/', age, '/', address)
 
+initials = first_name[0] + last_name[0]
+print(initials)
