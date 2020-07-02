@@ -4,4 +4,6 @@ my_list.insert(0, 'Ib')
 print(my_list)
 
 for value in my_list:
-    print(value)
+    while True:
+        print(value)
+        break

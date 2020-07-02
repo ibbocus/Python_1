@@ -21,7 +21,7 @@ else:
 
 age = int(input("What is your age?:"))
 classifications = ["U", "PG", "12a", "15", "18"]
-if age >18:
+if age > 17:
     print("These are the movies you can watch:", classifications)
 elif 14 < age < 18:
     print("These are the movies you can watch:", classifications[0:4])
@@ -29,25 +29,3 @@ elif 11 < age < 15:
     print("These are the movies you can watch:", classifications[0:3])
 else:
     print("These are the movies you can watch:", classifications[0:2])
-
-
-
-
-# rent = {'London': 5600.00, 'Paris': 3500.00, 'Tokyo': 5000.00}
-# print(rent)
-# total_income: float = 0.00
-# for value in rent.values():
-#     total_income += value  # Accumulate the values in total_income
-# print("total income:", total_income)
-# v = list(rent.values())
-# k = list(rent.keys())
-# print("The city with the largest rent is:", k[v.index(max(v))])
-# # Alternative method to retrieve a specific value from a key
-# print("The city with the lowest rent is:", min(rent, key=rent.get))
-
-#
-# weather = "sunny"
-# if weather == "sunny":
-#     print("go to the beach")
-# else:
-#     print("stay home")

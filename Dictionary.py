@@ -18,7 +18,7 @@ print(student_record["completed_lessons"])
 
 student_record["completed_lessons_names"].extend(["operators", "dictionaries", "append", "extend"])
 print(student_record)
-
+print(student_record.get("name"))
 
 
 
