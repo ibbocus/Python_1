@@ -1,0 +1,59 @@
+# Why do we create a class?
+# create a class with keyword class
+# naming convention for creating a class is to capitalise the first letter
+
+class Python_Calculator:
+    def __init__(self, nums, numb1):# initialising our class
+       self.nums = nums #
+
+    def multiply(self, *nums):
+        result = self
+        for num in nums:
+            result *= num
+        return result
+
+    def divide(self, *nums):
+        result = self
+        for num in nums:
+            result /= num
+        return result
+
+    def modulo(self, n1):
+        return self % n1
+
+    def addition(self, *nums):
+        result = self
+        for num in nums:
+            result += num
+        return result
+
+    def subtraction(self, *nums):
+        result = self
+        for num in nums:
+            result -= num
+        return result
+
+
+# testing if it works
+print(Python_Calculator.addition(1, -2, 3))
+
+if Python_Calculator.addition(1, 2, 3) == 6:
+    print("good!")
+else:
+    print("bad!")
+print(Python_Calculator.subtraction(100, 20, 45))
+if Python_Calculator.subtraction(100, 20, 45) == 35:
+    print("good!")
+else:
+    print("bad!")
+print(Python_Calculator.multiply(5, 2, -3))
+if Python_Calculator.multiply(5, 2, 3) == 30:
+    print("good!")
+else:
+    print("bad!")
+print(Python_Calculator.modulo(16, 5))
+
+if Python_Calculator.modulo(16, 5) == 1:
+    print("good!")
+else:
+    print("bad!")

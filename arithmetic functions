@@ -2,11 +2,13 @@
 # create a function with two args to return a division of the 2 values given
 # create a function with two args to return a remainder of  of the 2 values given
 # create a function with two args to return a * of the 2 values given
-n1 = int(input("n1?"))
-n2 = int(input("n2?"))
 
-def subtract(n1, n2):
-    return n1 - n2
+
+def subtract(n1, *nums):
+    result = n1
+    for num in nums:
+        result -= num
+    print(result)
 
 
 def divide(n1, n2):
@@ -16,10 +18,23 @@ def divide(n1, n2):
 def modulo(n1, n2):
     return n1 % n2
 
-def multiply(n1, n2):
-    return n1 * n2
 
-print(subtract(n1,n2))
-print(divide(n1,n2))
-print(modulo(n1,n2))
-print(multiply(n1,n2))
+def multiply(*nums):
+    result = 1
+    for num in nums:
+        result *= num
+    print(result)
+
+def addition(self,n1, *nums):
+    result = self
+    for num in nums:
+        result += num
+    print(result)
+    return
+
+print(addition(1,5,8))
+
+
+# print(divide(n1, n2))
+# print(modulo(n1, n2))
+# print(multiply(n1, n2, 50, 7, -1))

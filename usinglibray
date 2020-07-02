@@ -1,0 +1,24 @@
+# # how can we use builtin python library
+#
+# import random
+# import math
+# from ControlFlow import lucky_number
+
+
+# float_num = 24.5  # float
+# # round the number?
+# print(math.ceil(float_num))
+# lucky_number()
+# print(math.pi)
+
+def cm_to_inches():
+    mode = float(input("Enter 1 for inches to cm: \nEnter 2 for cm to inches: ")) # user input for which conversion they want
+    if mode == 1:
+        inches = float(input("how many inches? "))
+        return print(inches * 2.54)
+    elif mode == 2:
+        cm = float(input("how many cm? "))
+        return print(cm / 2.54)
+
+
+cm_to_inches()
