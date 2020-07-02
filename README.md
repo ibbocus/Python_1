@@ -7,3 +7,5 @@ What we covered today:
 - Lists and different functions within lists
 - Tuples
 - Converting tuples into lists
+
+# Wednesday 2nd July

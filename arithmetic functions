@@ -1,0 +1,25 @@
+# create a function with two args to return a subtraction of the 2 values given
+# create a function with two args to return a division of the 2 values given
+# create a function with two args to return a remainder of  of the 2 values given
+# create a function with two args to return a * of the 2 values given
+n1 = int(input("n1?"))
+n2 = int(input("n2?"))
+
+def subtract(n1, n2):
+    return n1 - n2
+
+
+def divide(n1, n2):
+    return n1 / n2
+
+
+def modulo(n1, n2):
+    return n1 % n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+print(subtract(n1,n2))
+print(divide(n1,n2))
+print(modulo(n1,n2))
+print(multiply(n1,n2))
