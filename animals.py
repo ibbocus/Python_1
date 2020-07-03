@@ -1,12 +1,12 @@
 class Animal:
     def __init__(self, name, colour, mood, hunger, sleepy, species, alive):
-        self.name = name
+        self.name = "name"
         self.colour = colour
         self.mood = mood
         self.hunger = "hungry"
         self.sleepy = sleepy
         self.species = species
-        self.alive = True
+        self.alive = False
 
     # this initialises the characteristics of the animal
     def feed(self):
@@ -14,7 +14,7 @@ class Animal:
         print(f"You give {self.name} a big bowl of food!\n")
 
     def change_name(self):
-        self.name = input(f"What would you like to name your {self.species}?")
+        self.name = input(f"What would you like to name your animal?")
 
     def kill(self):
         self.alive = False

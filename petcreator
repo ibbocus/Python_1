@@ -1,8 +1,0 @@
-from createanimal import action
-from dogs import *
-from cats import *
-from createanimal import *
-
-print("ENTER 'help' FOR LIST OF COMMANDS")
-while dog1.alive == True:
-    action(input("What would you like to do?"))
