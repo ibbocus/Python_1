@@ -1,8 +1,8 @@
-from animals import *
+from createanimal import action
 from dogs import *
 from cats import *
-from animalfunctions import *
+from createanimal import *
+
 print("ENTER 'help' FOR LIST OF COMMANDS")
 while dog1.alive == True:
-    if dog1.alive == True:
-        PlayerActions.action(input("What would you like to do?"))
+    action(input("What would you like to do?"))
