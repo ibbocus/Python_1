@@ -1,4 +1,7 @@
-from createanimal import *
+from dogs import *
+from cats import *
+
+
 def start_game():
     user_choice = input("cat or dog?")
     if user_choice == "dog":

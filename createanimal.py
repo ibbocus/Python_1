@@ -56,7 +56,7 @@ class DogActions(CreatePet):
 
 cat1 = CreatePet.cat()
 
-dog1 = CreatePet.dog()
+dog1 = CreatePet.dog(self)
 
 
 class CatActions(CreatePet):
